@@ -17,8 +17,14 @@
 
 }
 
+.sidebar >hr {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #282828;
+}
+
 .playlisttitle{
     margin-left: 10px;
     padding: 5px;
-    font-size: 12px;
+    font-size: 15px;
 }

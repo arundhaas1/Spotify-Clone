@@ -14,3 +14,9 @@
 .sidebaropticon{
     padding: 0px 10px;
 }
+
+.sidebaropticon >p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 13px;
+}

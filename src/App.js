@@ -38,6 +38,13 @@ function App() {
         })
       })
 
+      Spotify.getUserPlaylists().then(playlists=>{
+        dispatch({
+          type : 'ADD_PLAYLISTS',
+          playlists :playlists
+        })
+        
+      })
     }
 
   }, [])
