@@ -1,0 +1,24 @@
+.sidebar{
+    border: 1px solid black;
+    height: 100vh;
+    min-width: 230px;
+    flex: 0.2;
+    color: white;
+    padding: 0px 10px;
+    background: #040404;
+}
+
+.logo{
+    object-fit: contain;
+    height: 75px;
+    width: 170px;
+    padding: 10px;
+    margin-right: auto;
+
+}
+
+.playlisttitle{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}

@@ -5,11 +5,14 @@ import 'tachyons'
 import { getTokenFromUrl } from './Components/Spotify'
 import SpotifyWebApi from 'spotify-web-api-js'
 import Player from './Components/Player.js'
+import {useDataLayerValue} from './DataLayer' 
 
 function App() {
 
+  const[{user,token},dispatch] = useDataLayerValue();
+
   const Spotify = new SpotifyWebApi()
-  const[token,setToken]=useState(null);
+  // const[token,setToken]=useState(null);
 
   useEffect(() => {
     const hash = getTokenFromUrl ()
@@ -18,21 +21,32 @@ function App() {
         // console.log (_token)
 
     if (_token) {
-      setToken(_token);
+
+      dispatch({
+        type : 'SET_TOKEN',
+        token : _token
+      })
+
+      // setToken(_token);
 
       Spotify.setAccessToken(_token);
 
       Spotify.getMe().then(user=>{
-        console.log(user);
+        dispatch({
+          type:'SET_USER',
+          user : user
+        })
       })
 
     }
 
   }, [])
+
+  console.log('hi' ,token);
   return (
     <div className="app">
        {token ?
-        (<Player />) : 
+        (<Player Spotify={Spotify}/>) : 
          ( <Login />) }
 
     </div>

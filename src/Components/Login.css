@@ -25,5 +25,14 @@
     font-weight: 800;
     padding: 20px;
     margin-bottom: 30px;
+    margin-top: 400px;
+}
+
+.credit {
+    color: white;
+    margin-top: -340px;
+    margin-left: 470px;
+    opacity: 0.3;
+
 }
 
