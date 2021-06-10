@@ -6,3 +6,28 @@
     color: white;
     background: linear-gradient(rgb(91,87,115),rgba(0,0,0,1));
 }
+
+.infos{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.infotext{
+    flex: 1;
+}
+
+.infos >img {
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+}
+
+.infotext > p{
+    font-size: 14px;
+}
+
+.infotext > h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}

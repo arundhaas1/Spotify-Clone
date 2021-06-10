@@ -9,6 +9,53 @@
     padding: 20px;
 }
 
+.left{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+}
+
 .middle{
-    
+    flex: 0.4;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    max-width: 300px;
+    margin-right: 150px;
+}
+
+.right{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.songlogo{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.footergreen{
+    color: #1ed15e;
+}
+
+.footericon, .footergreen{
+    margin-left: 10px;
+}
+
+.footergreen:hover,.footericon:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.right * .MuiSlider-root{
+    color: green;
 }

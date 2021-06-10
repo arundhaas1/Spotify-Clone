@@ -10,7 +10,7 @@ function Login() {
             <h3>© Arun Dhas</h3>
             </div>
             <a href={loginUrl}>
-              <button className="grow">LOGIN WITH SPOTIFY</button>
+              <button className="loginbutton">LOGIN WITH SPOTIFY</button>
             </a>
         </div>
     )

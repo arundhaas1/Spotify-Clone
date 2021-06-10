@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.searchicon{
+    color: gray;
+    margin-left: 7px;
+}
+.headleft{
+    flex: 0.5;
+    min-width: 70px;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.headleft >input {
+    border: none;
+    width: 100%;
+}
+
+.headright{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    margin-left: auto;
+}
+.headright >h4  {
+    margin-left: 10px;
+}
+
