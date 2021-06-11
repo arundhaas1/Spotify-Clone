@@ -65,3 +65,7 @@
 .mi{
     margin-left: 15px;
 }
+
+.mi ,.fi {
+    margin-bottom: 10px;
+}
