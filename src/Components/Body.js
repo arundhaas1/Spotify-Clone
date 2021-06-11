@@ -20,9 +20,8 @@ function Body(Spotify) {
             <div className="infos">
                     <img alt="" src={discover_weekly?.images[0].url} />
                     <div className="infotext">
-                        <strong>PLAYLIST</strong>
-                        <h2>Discover Weekly</h2>
-                        <h2>arun</h2>
+                        <strong>{discover_weekly?.name}</strong>
+                        <h2>Discover Weekly</h2>                                           
                         <p>{discover_weekly?.description}</p>
                     </div>
             </div>
