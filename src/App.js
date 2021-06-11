@@ -22,30 +22,31 @@ function App() {
 
     if (_token) {
 
+      Spotify.setAccessToken(_token);
+
       dispatch({
         type : 'SET_TOKEN',
-        token : _token
+        token : _token,
       })
 
       // setToken(_token);
 
-      Spotify.setAccessToken(_token);
-
       Spotify.getMe().then(user=>{
         dispatch({
           type:'SET_USER',
-          user : user
+          user : user,
         })
       })
 
       Spotify.getUserPlaylists().then(playlists=>{
         dispatch({
-          type : 'SET_PLAYLISTS',
-          playlists :playlists
+          type : 'ADD_PLAYLISTS',
+          playlists :playlists,
         })
         
       })
-      Spotify.getPlaylist('06fNbRKZJzfzhPf5CmBs5X').then(response=>{
+
+      Spotify.getPlaylist("0mzSOqY6Yg2tcnhmeyJXfp").then(response=>{
         dispatch({
           type : 'SET_DISCOVER_WEEKLY',
           discover_weekly :response,

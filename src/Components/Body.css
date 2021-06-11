@@ -5,6 +5,11 @@
     padding: 30px;
     color: white;
     background: linear-gradient(rgb(91,87,115),rgba(0,0,0,1));
+    overflow-y: overlay;
+}
+
+.body ::-webkit-scrollbar{
+    display: none;
 }
 
 .infos{
@@ -30,4 +35,33 @@
 .infotext > h2{
     font-size: 48px;
     margin-bottom: 10px;
+}
+
+.songs{
+    display: flex;
+    align-items: center;
+}
+
+.songs > .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.body__shuffle{
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: -5px;
+}
+
+.body__shuffle:hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
+/* .pi , .fi , .mi{
+    margin: 10px
+} */
+
+.mi{
+    margin-left: 15px;
 }

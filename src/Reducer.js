@@ -1,6 +1,6 @@
 export const initialState = {
     user : null,
-    playlists : [],
+    playlists : [null],
     playing : false,
     item :null,
     // remove after complete down one 
@@ -22,7 +22,7 @@ export const reducer =(state,action)=>{
                         token: action.token,
                 };
                 
-            case "SET_PLAYLISTS":
+            case "ADD_PLAYLISTS":
                 return{
                         ...state,
                         playlists: action.playlists,
